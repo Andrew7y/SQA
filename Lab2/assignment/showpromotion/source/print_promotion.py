@@ -1,6 +1,6 @@
 # Lab#2 - Test design - designing practical test scenarios and test cases
-# Student name: Mr.......
-# Student ID:
+# Student name: Mr Kamphaengphet Singkhon
+# Student ID:ุ653380120-2
 
 MINIMUM = 500
 MIDRANGE: int = 700
