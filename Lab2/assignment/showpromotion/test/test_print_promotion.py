@@ -1,3 +1,7 @@
+# Lab#2 - Test design - designing practical test scenarios and test cases
+# Student name: Mr Kamphaengphet Singkhon
+# Student ID:ุ653380120-2
+
 import pytest
 import source.print_promotion as promo
 
