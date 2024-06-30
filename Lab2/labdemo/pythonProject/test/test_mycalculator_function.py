@@ -15,7 +15,7 @@ def test_add_two_numbers():
 
 def test_subtract_two_numbers():
     result = mycalculator_functions.subtract_two_number(number_one=3, number_two=5)
-    assert result == 2
+    assert result == -2
 
 
 def test_multiply_two_numbers():
