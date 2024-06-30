@@ -9,6 +9,7 @@ FREE_ICECREAM = "Free ice cream cone = "
 FREE_CAKE = "Free chocolate cake = "
 NO_GIFT = "Thank you and see you next time"
 
+
 def print_promotion(total_cost):
     temp_cost = total_cost
     num_icecream = 0
@@ -32,10 +33,15 @@ def print_promotion(total_cost):
     else:
         # no gift
         print(NO_GIFT)
+        return NO_GIFT
 
     if total_cost >= MAXIMUM:
-        print(FREE_ICECREAM + str(num_icecream) + " and " + FREE_CAKE + str(num_cake))
+        print(FREE_ICECREAM + str(int(num_icecream)) + " and " + FREE_CAKE + str(int(num_cake)))
+        return FREE_ICECREAM + str(int(num_icecream)) + " and " + FREE_CAKE + str(int(num_cake))
     elif total_cost >= MIDRANGE:
-        print(FREE_CAKE + str(num_cake))
+        print(FREE_CAKE + str(int(num_cake)))
+        return FREE_CAKE + str(int(num_cake))
     else:
-        print(FREE_ICECREAM + str(num_icecream))
+        print(FREE_ICECREAM + str(int(num_icecream)))
+        return FREE_ICECREAM + str(int(num_icecream))
+
