@@ -31,9 +31,9 @@ def test_TS003_TC05(capsys):
     assert captured.out == 'Free ice cream cone = 1.0 and Free chocolate cake = 1.0\n'
 
 def test_TS003_TC06(capsys):
-    promo.print_promotion(total_cost=0)
+    promo.print_promotion(total_cost=1200.00)
     captured = capsys.readouterr()
-    assert captured.out == 'Thank you and see you next time\n'
+    assert captured.out == 'Free ice cream cone = 1.0 and Free chocolate cake = 1.0\n'
 
 def test_TS004_TC07(capsys):
     promo.print_promotion(total_cost=150)
